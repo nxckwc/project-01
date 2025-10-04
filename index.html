@@ -1,0 +1,100 @@
+<!DOCTYPE html "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="styles/fonts.css" media="all">
+		<link rel="stylesheet" href="styles/crt.css" media="all">
+		<link rel="stylesheet" href="styles/menus.css" media="all">
+		<link rel="stylesheet" href="styles/tele.css" media="all">
+  	</head>
+  	<body onresize="posWindows();">
+		<!--CRT Frame-->
+		<img class="crt-frame" src="img/crt_grey_mask.png">
+		<div id="screen">
+			<div id="content" class="frame" style="height: 800px; filter: url(#SphereMapTest) url(#contrast) url(#brightness) url(#colorfill);">
+				<div style="display: none; position: absolute; top:-9999; z-index:0; visibility: hidden;">
+					
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg-root" width="381" height="166" z-index="-1">
+						<title id="test-title">filters-dispMap-BE-16</title>
+						<desc id="test-desc">Test which verifies the basic facilities of feDisplacementMap.</desc>
+						<defs>
+							
+							<!--<filter id="SphereMapTest" filterUnits="objectBoundingBox" x="-0.45" y="-1.29" width="1.6" height="3.5">
+								<feImage id="mapa" result="Map" xlink:href="img/sphere_wide_1.png" />
+								<feDisplacementMap id="despMap" in="SourceGraphic" in2="map" scale="100" xChannelSelector="R" yChannelSelector="G" />
+							</filter>-->
+							<filter id="colorfill" z-index="1">
+								<feColorMatrix id="colorMain" type="matrix" in="SourceGraphic" result="B"
+								values="
+									1	0	0	0	0
+									0	1	0	0	0
+									0	0	1	0	0
+									0	0	0	1	0
+									">
+								<animate id="colA" attributeName="values" begin="0s" dur="3.5s" restart_="always" repeatCount="1" values="
+									1	0	0	0	0
+									0	1	0	0	0
+									0	0	1	0	0
+									0	0	0	1	0;
+									1	0	0	0	0
+									0	1	0	0	0
+									0	0	1	0	0
+									0	0	0	1	0
+
+								" fill="freeze"/>
+								</feColorMatrix>
+								<feMerge>
+									<feMergeNode in="A"/>
+									<feMergeNode in="B"/>
+								</feMerge>
+							</filter>
+							
+							<filter id="brightness">
+								<feComponentTransfer>
+									<feFuncR id="brR" type="linear" slope="1"/>
+									<feFuncG id="brG" type="linear" slope="1"/>
+									<feFuncB id="brB" type="linear" slope="1"/>
+								</feComponentTransfer>
+							</filter>
+							<filter id="contrast">
+								<feComponentTransfer>
+									<feFuncR id="conR" type="linear" slope="1" intercept="0"/>
+									<feFuncG id="conG" type="linear" slope="1" intercept="0"/>
+									<feFuncB id="conB" type="linear" slope="1" intercept="0"/>
+								</feComponentTransfer>
+							</filter>
+							
+						</defs>
+					</svg>
+				</div>
+
+				<h1>WELCOME</h1>
+				<h2>to my portfolio</h2>
+				<h3>with a CRT effect</h3>
+				<h2>Press F11 for best experience</h2>
+				<h3>Press F5 to reload</h3>
+				<h2>Press F12 to open dev tools</h2>
+				<h3>hello</h3>
+				<h2>hello</h2>
+				<h1>hello</h1>
+				<p>its really fun</p>
+				<p>to make websites</p>
+				<p>with a CRT effect</p>
+				<p>i hope you like it</p>
+				<p>because i do</p>
+				<p>and i want to share it</p>
+				<p>with the world</p>
+				<p>so here it is</p>
+				<p>my portfolio</p>
+				<p>with a CRT effect</p>
+				<p>enjoy!</p>
+			</div>
+		<div class="scanline"></div>
+		<img class="cristal" id="image" src="img/suciedad.png" style="position: fixed; left:0; top:0">
+	</div>
+
+<script src="js/crt.js"></script>
+</body></html>
