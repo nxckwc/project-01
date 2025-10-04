@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "arcadeclassic";
+  src: url(../fonts/ARCADECLASSIC.TTF) format("truetype");
+  font-display: swap;
+}
+
+
+.cmd {
+  font-family: "arcadeclassic", bold;
+  font-size: 1.4em;
+	font-weight:normal;
+	font-style:normal;
+	color: #009900;
+	
+}
+.cursor {
+  font-family: "arcadeclassic";
+  
+  font-weight:normal;
+  font-style:normal;
+  color: #009900;
+  animation: blink 2s step-start 0s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
